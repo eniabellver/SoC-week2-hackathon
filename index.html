@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enia and Sinead</title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    <h1>Hackathon 26th Nov 2021</h1>
+
+    <section id="select-game-paramaters">
+        <!-- game heading -->
+        <h2 id="game-heading"> Cool trivia Game </h2>
+       
+        <!-- category dropdown label-->
+        <label for="category-dropdown">Select trivia category</label>
+        <!-- category dropdown -->
+        <div class="dropdown">
+        <button id="category-dropdown-button" onclick="">Animals</button>
+        <p id=category-answer></p>
+        </div>
+
+        <!-- difficulty dropdown label-->
+        <label for="difficulty-dropdown">Select difficulty level</label>
+        <!-- difficulty dropdown -->
+        <div class="dropdown">
+        <button id="difficulty-dropdown-button" onclick="">Easy</button>
+        <p id=category-answer></p>
+        </div>
+
+
+        <!-- BUTTON - start game (1st time) / play (game) again button -->
+        <button id="run-game-button" type="submit">Start Game</button>
+
+        <!-- LATER RELEASE: floating div for the scores -->
+            <!--   last rounds score label-->
+            <!--   last rounds score value-->
+            <!--   total score label-->
+            <!--   total score value-->
+    </section>
+
+    <!-- SECOND SECTION - displayes the quiz Q&A AFTER the user presses 'start' game-->
+    <section id="display-game-q-a">
+        
+        <!-- text that summarises what the users picked 
+             "you chose <category> with difficulty <difficulty level"-->
+        <p> You chose the category "animals" with a difficulty level of easy.</p>
+
+        <!-- question 1 text -->        
+        <h3 id="q1-heading">Question 1 placeholder text</h3>
+        <!-- question 1 true radio button LABEL -->
+        <label for="q1-radio-true">Question 1: True:</label>
+        <!-- question 1 'true radio button' - unchecked-->
+        <input type="radio" name="question1-radio-group" id="q1-radio-true" value=true unchecked>
+
+        <!-- question 1 false radio button LABEL -->
+        <label for="q1-radio-false"> False:</label>
+        <!-- question 1 'false radio button' - unchecked-->
+        <input type="radio" name="question1-radio-group" id="q1-radio-true" value=true unchecked><br />
+
+        <!-- later phase - add more questions  -->  
+
+        <!-- question 2 text -->        
+        <!-- question 2 true radio button LABEL -->
+        <!-- question 2 'true radio button' - unchecked-->
+        <!-- question 2 false radio button LABEL -->
+        <!-- question 2 'false radio button' - unchecked-->
+             
+                
+        <!-- BUTTON - submit answers button -->
+        <br />
+        <br />
+        <button id="submit-answers-button" type="submit">Submit Answers</button>
+
+        
+       </section>
+    <script src="main.js"></script>
+</body>
+</html>
